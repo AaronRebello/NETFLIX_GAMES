@@ -208,6 +208,41 @@ const useStyles = makeStyles((theme) => ({
                 icon: <AddToQueueIcon fontSize="large" color="secondary" />,
                 Action: () => history.push("/logicgames"),
               },
+              // {
+              //   text: "Logic",
+              //   icon: <AddToQueueIcon fontSize="large" color="secondary" />,
+              //   Action: () => history.push("/logicgames"),
+              // },
+              // {
+              //   text: "Logic",
+              //   icon: <AddToQueueIcon fontSize="large" color="secondary" />,
+              //   Action: () => history.push("/logicgames"),
+              // },
+              // {
+              //   text: "Logic",
+              //   icon: <AddToQueueIcon fontSize="large" color="secondary" />,
+              //   Action: () => history.push("/logicgames"),
+              // },
+              // {
+              //   text: "Logic",
+              //   icon: <AddToQueueIcon fontSize="large" color="secondary" />,
+              //   Action: () => history.push("/logicgames"),
+              // },
+              // {
+              //   text: "Logic",
+              //   icon: <AddToQueueIcon fontSize="large" color="secondary" />,
+              //   Action: () => history.push("/logicgames"),
+              // },
+              // {
+              //   text: "Logic",
+              //   icon: <AddToQueueIcon fontSize="large" color="secondary" />,
+              //   Action: () => history.push("/logicgames"),
+              // },
+              // {
+              //   text: "Logic",
+              //   icon: <AddToQueueIcon fontSize="large" color="secondary" />,
+              //   Action: () => history.push("/logicgames"),
+              // },
           ].map((item, index) => (
             <ListItem button key={item.text} onClick={item.Action}>
               <ListItemIcon>{item.icon ? item.icon : null}</ListItemIcon>

@@ -12,13 +12,14 @@ import SportsGames from "./components/scripts/sports/SportsGames"
 import StrategyGames from "./components/scripts/strategy/StrategyGames"
 import WarGames from "./components/scripts/war/WarGames"
 import Login from "./components/scripts/login-page/Login"
-
+import GetStarted from "./components/scripts/login-page/GetStarted"
 // import {Provider} from "react-redux"
 
 function App() {
   return (
 <Router>
-<Route exact path="/" component={Login}/>
+<Route exact path="/" component={GetStarted}/>
+<Route exact path="/login" component={Login}/>
 <Route exact path="/actiongames" component={ActionGames} />
 <Route exact path="/actionadventuregames" component={ActionAdventureGames} />
 <Route exact path="/adventuregames" component={AdventureGames} />

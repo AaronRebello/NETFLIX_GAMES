@@ -8,7 +8,7 @@ export default class Login extends Component {
     super(props);
     let loggedIn = false;
     this.state = {
-      username: "",
+      email: "",
       password: "",
       loggedIn,
     };
@@ -23,8 +23,8 @@ export default class Login extends Component {
 
   submitForm = (e) => {
     e.preventDefault();
-    const { username, password } = this.state;
-    if (username === "Aaron" && password === "12345") {
+    const { email, password } = this.state;
+    if (email === "rebelloaaron4@gmail.com" && password === "12345") {
       localStorage.setItem("token", "Aaron");
       this.setState({
         loggedIn: true,
@@ -38,39 +38,71 @@ export default class Login extends Component {
     }
     return (
       <React.Fragment>
-        <form className="container" onSubmit={this.submitForm}>
+        <nav class="navbar navbar-light bg-dark">
+          <div>
+            <a class="navbar-brand" href="#">
+              <img
+                src="image/gamerlogo.jpg"
+                alt=""
+                width="170"
+                height="60"
+              ></img>
+            </a>
+          </div>
+        </nav>
+        <form className="" onSubmit={this.submitForm}>
           <Card
             style={{
-              marginTop: 100,
-              height: 400,
-              width: 800,
-              marginLeft: 150,
-              backgroundColor: "lightblue",
+              height: 900,
+              width: 1900,
+              backgroundColor: "black",
             }}
           >
             <center>
-              <h1 style={{ marginTop: 30 }}>Login</h1>
-              <label for="exampleInputEmail1">Username: </label>
+              <h4 style={{ marginTop: 200, color: "white" }}>Sign in</h4>
               <input
                 type="text"
-                placeholder=""
-                style={{ width: 400, marginTop: 70, height: 35 }}
-                name="username"
-                value={this.state.username}
+                placeholder="Email"
+                style={{
+                  width: 500,
+                  marginTop: 70,
+                  height: 50,
+                  border: "3px solid grey",
+                  backgroundColor: "black",
+                  color:"white"
+                }}
+                name="email"
+                value={this.state.email}
                 onChange={this.onHandleChange}
               />
               <br />
-              <label for="exampleInputEmail1">Password: </label>
               <input
                 type="password"
-                placeholder=""
-                style={{ width: 400, marginTop: 20, height: 35 }}
+                placeholder="Password"
+                style={{
+                  width: 500,
+                  marginTop: 20,
+                  height: 50,
+                  border: "3px solid grey",
+                  backgroundColor: "black",
+                  color:"white"
+                }}
                 name="password"
                 value={this.state.password}
                 onChange={this.onHandleChange}
               />
               <br />
-              <input style={{ marginTop: 30, color: "blue" }} type="Submit" />
+              <input
+                style={{
+                  marginTop: 30,
+                  color: "white",
+                  backgroundColor: "black",
+                  width: 300,
+                  height: 35,
+                }}
+                type="submit"
+                value="Sign up"
+              />
             </center>
           </Card>
         </form>
