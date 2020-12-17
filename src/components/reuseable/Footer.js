@@ -12,7 +12,7 @@ import DehazeSharpIcon from '@material-ui/icons/DehazeSharp';
             <nav class="navbar fixed-bottom navbar-light" style={{backgroundColor:"black",color:"white",height:50,}}>
             <div class="container-fluid">
              {/* <a class="navbar-brand ml-5" href="#" style={{color:"white"}}>Game</a> */}
-              <HomeOutlinedIcon className="ml-5"/>
+              <a href="/"><HomeOutlinedIcon className="ml-5"/></a>
               <SearchIcon/>
               <SportsEsportsOutlinedIcon/>
               <GetAppSharpIcon/>
